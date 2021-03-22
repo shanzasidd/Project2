@@ -9,12 +9,12 @@ Create animations and styling for the cards. -->
 	<title> Jeopardy</title>
 
 	<!-- CSS linking -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="./jeopardy.css" rel="stylesheet" type="text/css">
-	<link href="./row_col.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<!-- Create a Header with links. -->
-	<div style="background-color:blue">
+	<div id = "body_header_main" style="background-color:blue">
 			<div >
                 <h1 class="center" id="h1">
                     Jeopardy
