@@ -1,0 +1,132 @@
+.center {
+    text-align: center;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overscroll-behavior: none;
+    background-image: url("./images/screen3.gif");
+}
+
+body.bckgrd {
+    background-image: url("./images/q&aPage.jpg");
+}
+
+h1 {
+    padding: 20px;
+    font-size: 200%;
+    color: white;
+    margin-bottom: 0;
+}
+
+#h1 {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+
+/* Top navigation */
+
+.topnav {
+    overflow: hidden;
+    padding-bottom: 10 auto;
+    background-color: blue;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: lightblue;
+    color: white;
+}
+
+.hero-bkg-animated {
+    background: gray url(screen.jpg) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-animation: slide 20s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+    font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -400px 0;
+    }
+}
+
+#score_container_main {
+    padding: 3%;
+}
+
+#game_cards_container {
+    padding: 3%;
+    text-align: center;
+}
+
+.questionbutton {
+    border: 1px solid #c3c3c3;
+    padding: 5px;
+    height: 100%;
+}
+
+#game_cards_container div div {
+    text-align: center;
+}
+
+.categoryHeader {
+    border: 1px solid #c3c3c3;
+    padding: 5px;
+}
+
+.questionRow {
+    height: 130px;
+}
+
+#submitbutton {
+    border: 1px solid #c3c3c3;
+}
+
+body div div button {
+    font-size: 50px;
+    font-weight: bold;
+    color: gold;
+    background-image: url("./images/background.jpg");
+}
+
+img.banner {
+    background-image: url("./images/banner.jpg");
+    width: 300px;
+}
