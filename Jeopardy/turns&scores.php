@@ -65,7 +65,7 @@ This file set the cookies for the players names, players turns, and players scor
 	}
 
 	// still working on displaying the player who wins
-	if((int)$questionCount == 16){
+	if((int)$questionCount == 20){
 		if((int)$player1Score > (int)$player2Score){
 			header("location: player1wins.php");
 		}else{

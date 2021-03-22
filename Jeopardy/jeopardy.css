@@ -10,10 +10,6 @@ body {
     background-image: url("./images/screen3.gif");
 }
 
-body.bckgrd {
-    background-image: url("./images/q&aPage.jpg");
-}
-
 h1 {
     padding: 20px;
     font-size: 200%;
@@ -64,55 +60,12 @@ h1 {
     color: white;
 }
 
-.hero-bkg-animated {
-    background: gray url(screen.jpg) repeat 0 0;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    height: 100%;
-    box-sizing: border-box;
-    -webkit-animation: slide 20s linear infinite;
-}
-
-.hero-bkg-animated h1 {
-    font-family: sans-serif;
-}
-
-@-webkit-keyframes slide {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: -400px 0;
-    }
-}
-
 #score_container_main {
     padding: 3%;
 }
 
-#game_cards_container {
-    padding: 3%;
-    text-align: center;
-}
-
-.questionbutton {
-    border: 1px solid #c3c3c3;
-    padding: 5px;
-    height: 100%;
-}
-
 #game_cards_container div div {
     text-align: center;
-}
-
-.categoryHeader {
-    border: 1px solid #c3c3c3;
-    padding: 5px;
-}
-
-.questionRow {
-    height: 130px;
 }
 
 #submitbutton {
@@ -126,7 +79,11 @@ body div div button {
     background-image: url("./images/background.jpg");
 }
 
-img.banner {
-    background-image: url("./images/banner.jpg");
-    width: 300px;
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 70px;
+    height: 70px;
+    border: 5px solid #c3c3c3;
+    padding: 5px;
 }

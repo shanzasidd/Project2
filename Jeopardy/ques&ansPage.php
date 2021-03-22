@@ -9,7 +9,7 @@
 	<!-- CSS linking -->
 	<link href="./jeopardy.css" rel="stylesheet" type="text/css">
 </head>
-<body >
+<body>
     
 <div id = "body_header_main" style="background-color:blue">
 			<div >

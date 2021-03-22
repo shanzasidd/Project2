@@ -143,5 +143,37 @@
         $questionScore = 800;
         setcookie("fourthfourth", TRUE, time() + 31536000);
     
+    
+
+        // fifth row question
+    }elseif (isset($_POST["fifthfirst"])) { //sports Question
+        $question = "";
+        $correctAnswer = "";
+        $option1 = "";
+        $option2 = "";
+        $questionScore = 1000;
+        setcookie("fifthfirst", TRUE, time() + 31536000);
+    }elseif (isset($_POST["fifthsecond"])) { // music Question
+        $question = "?";
+        $correctAnswer = "";
+        $option1 = "";
+        $option2 = "";
+        $questionScore = 1000;
+        setcookie("fifthsecond", TRUE, time() + 31536000);
+    }elseif (isset($_POST["fifththird"])) { // education Question
+        $question = "";
+        $correctAnswer = "";
+        $option1 = "";
+        $option2 = "";
+        $questionScore = 1000;
+        setcookie("fifththird", TRUE, time() + 31536000);
+    }elseif (isset($_POST["fifthfourth"])) { // Trivia Question
+        $question = "";
+        $correctAnswer = "";
+        $option1 = "";
+        $option2 = "";
+        $questionScore = 1000;
+        setcookie("fifthfourth", TRUE, time() + 31536000);
+    
     }
 ?>

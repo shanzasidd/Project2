@@ -9,12 +9,11 @@ Create animations and styling for the cards. -->
 	<title> Jeopardy</title>
 
 	<!-- CSS linking -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="./jeopardy.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<!-- Create a Header with links. -->
-	<div id = "body_header_main" style="background-color:blue">
+	<div style="background-color:blue">
 			<div >
                 <h1 class="center" id="h1">
                     Jeopardy
@@ -57,142 +56,168 @@ Create animations and styling for the cards. -->
 		</div>
 	</div>
 	<br/>
+	<br><br><br>
 	<form action="ques&ansPage.php" method="post">
-	<div id = "game_cards_container" >
+	
           <!--inputting the categories-->
-		<div class = "row questionRow" style="height: 80px">
-			<div class = "col-sm categoryHeader" style = "padding: 5px"> <div style = "line-height: 70px; background-image: url('./images/category.jpg');font-size:35px;font-family:'Comic Sans'; color:white;"><b><i>SPORTS</i></b></div></div>
+		<div class="wrapper">
+			 <div  style =  "background-image: url('./images/category.jpg');font-size:35px;font-family:'Comic Sans'; color:white; text-align:center"><b><i>SPORTS</i></b></div>
 
-			<div class = "col-sm categoryHeader" style = "padding: 5px"> <div style = "line-height: 70px; background-image: url('./images/category.jpg');font-size:35px;font-family:'Comic Sans'; color:white;"><b><i>MUSIC</i></b></div></div>
+			 <div  style =  "background-image: url('./images/category.jpg');font-size:35px;font-family:'Comic Sans'; color:white; text-align:center"><b><i>MUSIC</i></b></div>
 			
-			<div class = "col-sm categoryHeader" style = "padding: 5px"> <div style = "line-height: 70px; background-image: url('./images/category.jpg');font-size:35px;font-family:'Comic Sans'; color:white;"><b><i>EDUCATION</i></b></div></div>
+			 <div  style =  "background-image: url('./images/category.jpg');font-size:35px;font-family:'Comic Sans'; color:white; text-align:center"><b><i>EDUCATION</i></b></div>
 			
-			<div class = "col-sm categoryHeader" style = "padding: 5px"> <div style = "line-height: 70px; background-image: url('./images/category.jpg');font-size:35px;font-family:'Comic Sans'; color:white;"><b><i>TRIVIA</i></b></div></div>
+			 <div  style =  "background-image: url('./images/category.jpg');font-size:35px;font-family:'Comic Sans'; color:white; text-align:center"><b><i>TRIVIA</i></b></div>
 			
-
-		</div>
+        </div>
 
 		<!--setting up the cards for the questions-->
 		<!--first row-->
-		<div class = "row questionRow" id="cards"> 
+	<div class="wrapper"> 
 
 		<?php if(($_COOKIE["firstfirst"])){ ?>
-				<div class = "col-sm questionbutton"  ><button type="submit" name = "firstfirst" style="width: 100%; height: 100%;  color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div   ><button type="submit" name = "firstfirst" style="width: 100%; height: 100%;  color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton" ><button type="submit" name = "firstfirst" style="width: 100%; height: 100%; " >$100</button></div>
+				<div  ><button type="submit" name = "firstfirst" style="width: 100%; height: 100%; " >$200</button></div>
 		<?php } ?>
 
 		<?php if(($_COOKIE["firstsecond"])){ ?>
-				<div class = "col-sm questionbutton" id="soccer"><button type="submit" name = "firstsecond" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div  id="soccer"><button type="submit" name = "firstsecond" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "firstsecond" style="width: 100%; height: 100%; " >$100</button></div>
+				<div ><button type="submit" name = "firstsecond" style="width: 100%; height: 100%; " >$200</button></div>
 		<?php } ?>
 			
 		<?php if(($_COOKIE["firstthird"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "firstthird" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "firstthird" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "firstthird" style="width: 100%; height: 100%; " >$100</button></div>
+				<div ><button type="submit" name = "firstthird" style="width: 100%; height: 100%; " >$200</button></div>
 		<?php } ?>
 			
 		<?php if(($_COOKIE["firstfourth"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "firstfourth" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "firstfourth" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "firstfourth" style="width: 100%; height: 100%; " >$100</button></div>
+				<div ><button type="submit" name = "firstfourth" style="width: 100%; height: 100%; " >$200</button></div>
 		<?php } ?>
-			
 		
-
-		</div>
+	</div>
+	 
         
+	<div class="wrapper"> 
 		<!--second row-->
-		<div class = "row questionRow">
+		
 		<?php if(($_COOKIE["secondfirst"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "secondfirst" style="width: 100%; height: 100%; color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')" disabled >Answered</button></div>
+				<div ><button type="submit" name = "secondfirst" style="width: 100%; height: 100%; color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')" disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "secondfirst" style="width: 100%; height: 100%; " >$200</button></div>
+				<div ><button type="submit" name = "secondfirst" style="width: 100%; height: 100%; " >$400</button></div>
 		<?php } ?>
 
 		<?php if(($_COOKIE["secondsecond"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "secondsecond" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "secondsecond" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "secondsecond" style="width: 100%; height: 100%; " >$200</button></div>
+				<div ><button type="submit" name = "secondsecond" style="width: 100%; height: 100%; " >$400</button></div>
 		<?php } ?>
 			
 		<?php if(($_COOKIE["secondthird"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "secondthird" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "secondthird" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "secondthird" style="width: 100%; height: 100%; " >$200</button></div>
+				<div ><button type="submit" name = "secondthird" style="width: 100%; height: 100%; " >$400</button></div>
 		<?php } ?>
 			
 		<?php if(($_COOKIE["secondfourth"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "secondfourth" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "secondfourth" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "secondfourth" style="width: 100%; height: 100%; " >$200</button></div>
+				<div ><button type="submit" name = "secondfourth" style="width: 100%; height: 100%; " >$400</button></div>
 		<?php } ?>
 			
-		
+	</div>
 
-		</div>
-
+	<div class="wrapper"> 
 		<!--third row-->
-		<div class = "row questionRow">
+		
 		<?php if(($_COOKIE["thirdfirst"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "thirdfirst" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "thirdfirst" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "thirdfirst" style="width: 100%; height: 100%;" >$300</button></div>
+				<div ><button type="submit" name = "thirdfirst" style="width: 100%; height: 100%;" >$600</button></div>
 		<?php } ?>
 
 		<?php if(($_COOKIE["thirdsecond"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "thirdsecond" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "thirdsecond" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "thirdsecond" style="width: 100%; height: 100%; " >$300</button></div>
+				<div ><button type="submit" name = "thirdsecond" style="width: 100%; height: 100%; " >$600</button></div>
 		<?php } ?>
 			
 		<?php if(($_COOKIE["thirdthird"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "thirdthird" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "thirdthird" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "thirdthird" style="width: 100%; height: 100%; " >$300</button></div>
+				<div ><button type="submit" name = "thirdthird" style="width: 100%; height: 100%; " >$600</button></div>
 		<?php } ?>
 			
 		<?php if(($_COOKIE["thirdfourth"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "thirdfourth" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "thirdfourth" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "thirdfourth" style="width: 100%; height: 100%; " >$300</button></div>
+				<div ><button type="submit" name = "thirdfourth" style="width: 100%; height: 100%; " >$600</button></div>
 		<?php } ?>
 			
-		
+	</div>
 
-		</div>
-
+	<div class="wrapper"> 
 		<!--fouth row-->
-		<div class = "row questionRow">
+		
 		<?php if(($_COOKIE["fourthfirst"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "fourthfirst" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "fourthfirst" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "fourthfirst" style="width: 100%; height: 100%; " >$400</button></div>
+				<div ><button type="submit" name = "fourthfirst" style="width: 100%; height: 100%; " >$800</button></div>
 		<?php } ?>
 
 		<?php if(($_COOKIE["fourthsecond"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "fourthsecond" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "fourthsecond" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "fourthsecond" style="width: 100%; height: 100%; " >$400</button></div>
+				<div ><button type="submit" name = "fourthsecond" style="width: 100%; height: 100%; " >$800</button></div>
 		<?php } ?>
 			
 		<?php if(($_COOKIE["fourththird"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "fourththird" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "fourththird" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "fourththird" style="width: 100%; height: 100%; " >$400</button></div>
+				<div ><button type="submit" name = "fourththird" style="width: 100%; height: 100%; " >$800</button></div>
 		<?php } ?>
 			
 		<?php if(($_COOKIE["fourthfourth"])){ ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "fourthfourth" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+				<div ><button type="submit" name = "fourthfourth" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
 			<?php }else { ?>
-				<div class = "col-sm questionbutton"><button type="submit" name = "fourthfourth" style="width: 100%; height: 100%; " >$400</button></div>
+				<div ><button type="submit" name = "fourthfourth" style="width: 100%; height: 100%; " >$800</button></div>
+		<?php } ?>
+	</div>	
+
+
+
+	<div class="wrapper"> 
+		<!--fifth row-->
+		
+		<?php if(($_COOKIE["fifthfirst"])){ ?>
+				<div ><button type="submit" name = "fifthfirst" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+			<?php }else { ?>
+				<div ><button type="submit" name = "fifthfirst" style="width: 100%; height: 100%; " >$1000</button></div>
+		<?php } ?>
+
+		<?php if(($_COOKIE["fifthsecond"])){ ?>
+				<div ><button type="submit" name = "fifthsecond" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+			<?php }else { ?>
+				<div ><button type="submit" name = "fifthsecond" style="width: 100%; height: 100%; " >$1000</button></div>
 		<?php } ?>
 			
+		<?php if(($_COOKIE["fifththird"])){ ?>
+				<div ><button type="submit" name = "fifththird" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+			<?php }else { ?>
+				<div ><button type="submit" name = "fifththird" style="width: 100%; height: 100%; " >$1000</button></div>
+		<?php } ?>
+			
+		<?php if(($_COOKIE["fifthfourth"])){ ?>
+				<div ><button type="submit" name = "fifthfourth" style="width: 100%; height: 100%;color:red;font-size:30;color:red;font-size:30;background-image: url('./images/alreadyAns.png')"  disabled >Answered</button></div>
+			<?php }else { ?>
+				<div ><button type="submit" name = "fifthfourth" style="width: 100%; height: 100%; " >$1000</button></div>
+		<?php } ?>
+	</div>
 		
-
-		</div>
 
 </body>
 </html>
