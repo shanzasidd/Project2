@@ -4,7 +4,7 @@
 
 <html> 
 <head>
-	<title> Jeopardy Game Play</title>
+	<title> Jeopardy Questions&Answers</title>
 
 	<!-- CSS linking -->
 	<link href="./jeopardy.css" rel="stylesheet" type="text/css">
@@ -60,13 +60,11 @@
             </div>
             <br/>
             <input type="radio" id="true" name="selectedAnswer" value="option1">
-            <label for="true"><?php echo "1. ".$option1 ?></label><br>
+            <label for="true"><?php echo $option1 ?></label><br>
             <input type="radio" id="false" name="selectedAnswer" value="option2">
-            <label for="false"><?php echo "2. ".$option2 ?></label><br>
+            <label for="false"><?php echo $option2 ?></label><br>
             <input type="radio" id="false" name="selectedAnswer" value="option3">
-            <label for="false"><?php echo "3. ".$option3 ?></label><br>
-            <input type="radio" id="false" name="selectedAnswer" value="option4">
-            <label for="false"><?php echo "4. ".$option4 ?></label><br>
+            <label for="false"><?php echo $option3 ?></label><br>
             <div>
                 <input style = "align: center" type = "submit" name="answerButton" value = "Submit Answer">
             </div>
