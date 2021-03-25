@@ -1,5 +1,5 @@
 <?php  
-    //echo "game has been reset";
+    // resetting the game
     setcookie("player1Score", 0, time() + 31536000);
     setcookie("player2Score", 0, time() + 31536000);
     setcookie("player1turn", TRUE, time() + 31536000);
@@ -35,11 +35,11 @@
     setcookie("fourthfourth", FALSE, time() + 31536000);
 
     //fifth row
-    setcookie("fithfirst", FALSE, time() + 31536000);
+    setcookie("fifthfirst", FALSE, time() + 31536000);
     setcookie("fifthsecond", FALSE, time() + 31536000);
     setcookie("fifththird", FALSE, time() + 31536000);
     setcookie("fifthfourth", FALSE, time() + 31536000);
 
     header("location: startGame.php");
-    // exit();
+    
 ?>

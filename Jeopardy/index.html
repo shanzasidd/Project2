@@ -1,19 +1,11 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-    <title>Jeopardy Registration</title>
+    <title>Project Info</title>
     <style>
         html {
             height: 100%;
-        }
-        
-        h1 {
-            color: #6c3;
-            text-align: center;
-            font-weight: bold;
-            font-size: 50px;
         }
         
         body {
@@ -31,7 +23,7 @@
         
         .bg {
             animation: slide 3s ease-in-out infinite alternate;
-            background-image: linear-gradient(-60deg, rgb(51, 181, 204) 50%, rgb(255, 0, 255) 50%);
+            background-image: linear-gradient(-60deg, rgb(204, 51, 51) 50%, rgb(225, 0, 255) 50%);
             bottom: 0;
             left: -50%;
             opacity: .5;
@@ -95,15 +87,63 @@
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     <div class="content">
-        <form action="register-submit.php" method="POST">
-            <h1>Welcome to Jeopardy</h1>
-            <h2>Username:</h2><input type="username" name="username" required><br>
-            <h2>Password:</h2><input type="text" name="password" required><br>
-            <h2></h2>
-            <input type="submit" value="Register">&nbsp;&nbsp; Already registed ? <a href="login.html">login</a>
+        <h1>Project Details</h1>
+        <div id="info">
+            <ol>
+                <li>Project Leader</li>
+                <p>Rachid Bodson</p>
 
+                <li>Project Name:</li>
+                <p>Jeopardy</p>
 
-        </form>
+                <li>Description:</li>
+                <p>Given a set of questions and answers choices, two players take turns answering the questions and gain money(points) for each correct answer.</p>
+
+                <li>Team Members:</li>
+                <p>Shehata Abdullah, Bodson Rachid, Siddiqi Shanza, Beatty Johanna. </p>
+
+                <li>Team Members Actions:</li>
+                <ul>
+                    <li>
+                        Shehata Abdullah
+                        <ul class="sublist">
+                            <li>
+                                Programmer/Tester
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        Bodson Rachid
+                        <ul class="sublist">
+                            <li>
+                                Programmer/Tester
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        Siddiqi Shanza
+                        <ul class="sublist">
+                            <li>
+                                Designer/Powerpoint
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        Beatty Johanna
+                        <ul class="sublist">
+                            <li>
+                                Designer
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </ol>
+            <div id="link"><a href=register.html>continue to game</a></div>
+        </div>
     </div>
 </body>
 

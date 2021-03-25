@@ -35,12 +35,12 @@
     setcookie("fourthfourth", FALSE, time() + 31536000);
 
     //fifth row
-    setcookie("fithfirst", FALSE, time() + 31536000);
+    setcookie("fifthfirst", FALSE, time() + 31536000);
     setcookie("fifthsecond", FALSE, time() + 31536000);
     setcookie("fifththird", FALSE, time() + 31536000);
     setcookie("fifthfourth", FALSE, time() + 31536000);
 
-    header("location: startGame.php");
+    
     header("location: login.html");
     // exit();
 ?>

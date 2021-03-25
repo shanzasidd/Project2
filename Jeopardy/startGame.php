@@ -24,7 +24,7 @@ Create animations and styling for the cards. -->
                     <a href="./resetGame.php">Reset Game</a>
                     <a href="./howToPlay.html">HowToPlay </a>
 					<a href="./inputPlayersNames.html">EnterPlayersNames </a>
-				    <a href="./login.html" style="float:right"> Logout </a>
+				    <a href="./logout.php" style="float:right"> Logout </a>
 					<a href="./leaderboard.php" style="float:right">Leaderboard </a>                    
                     
                 </div>

@@ -17,7 +17,7 @@ $username = $_POST["username"];
             $mUsername = (explode(",", $matchData)[0]);
 
             if($username == $mUsername ){
-               die("<p style='font-size:30pt'>User already exists, <a href='login.html'>try login in</a> or <a href='index.html'>register</a> with different user</p>");
+               die("<p style='font-size:30pt'>User already exists, <a href='login.html'>try login in</a> or <a href='register.html'>register</a> with different user</p>");
             }
            }
   // Get the user's data

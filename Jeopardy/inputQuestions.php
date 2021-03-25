@@ -174,7 +174,7 @@
         $option3 = "Justin Bieber";
         $questionScore = 1000;
         setcookie("fifthsecond", TRUE, time() + 31536000);
-    }elseif (isset($_POST["fifththird"])) { // education Question
+    }elseif (isset($_POST["fifththird"])) { // science Question
         $question = "The measurement is used to measure the depth of water is?";
         $correctAnswer = "option2";
         $option1 = "Feet";

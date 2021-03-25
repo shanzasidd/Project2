@@ -52,7 +52,7 @@
     <br/>
     <br/>
     <br/>
-    <!-- The options for the answer choices -->
+    <!-- The questions and options for the answer choices -->
 	<form action="startGame.php" method="post">
         <div id = "questiondiv" style= "text-align: center; color:aqua" >
             <div>

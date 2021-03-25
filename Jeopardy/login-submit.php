@@ -22,6 +22,6 @@ $password = $_POST["password"];
                 header("location: startGame.php");
             }
     }
-    die("<p style='font-size:30pt'>Incorrect username or password,<a href='login.html'>try again</a> or <a href='index.html'>register!</a></p>");
+    die("<p style='font-size:30pt'>Incorrect username or password,<a href='login.html'>try again</a> or <a href='register.html'>register!</a></p>");
 
 ?>
